@@ -1,0 +1,35 @@
+139.199.158.185:27017
+数据库名称为service
+用户名为 user
+密码为 password24we45
+电影：Movie
+	movieId:电影Id
+	movieName:电影名称
+	director:导演
+	editors:编剧们 ,分隔每个
+	actors:主演们
+	tags:标签们
+	country:出品国家
+	language:语言
+	duration:电影长度
+	summary:简介
+	imdb:imdb连接可能没有
+	imageHttp:图片地址
+上映信息：ReleaseTime
+	movieId：电影Id
+	country:地区
+	releaseTime:上映时间
+评论：Comment
+	commentId:评论Id
+	userName:用户名字
+	score:评分
+	startDate:评论日期
+	content:内容
+	praise:点赞个数
+用户:User
+	userName: 用户名字
+	userHttp: 用户信息界面
+	portraitHttp: 头像地址
+	
+
+	

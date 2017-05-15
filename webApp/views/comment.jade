@@ -1,0 +1,25 @@
+extends layout/layout
+
+block content
+	h1 release your comment
+	form(method="post" role="form")
+		input(type='hidden', name="_id", value='')
+		div.conment-open-text
+			p
+				label(for="comment-text" ) 您的留言
+			p
+				textarea.comment-text(name="content" rows="10" cols = "50" value="啦啦啦,我是卖报的小行家")
+		div.comment-form-email
+			p 
+				label(for="comment-email") 电子邮件
+			p
+				input.comment-email(name="email" size="30" value="1220864925@qq.com")
+
+		div.comment-form-name
+			p
+				label(for="comment-author" va) 您的大名
+			p
+				input.comment-author(name="name" size="30" value="小红帽")
+		div 
+			div
+				button(type="submit") 	发表
