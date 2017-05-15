@@ -1,0 +1,20 @@
+extends ../layout/layout
+
+block content
+	link(rel="stylesheet" href="../public/libs/bootstrap/css/bootstrap.css")
+	form.form-horizontal(role='form' enctype='multipart/form-data' method = 'post', action='/vacation-photo/{year}/{month}')
+		div.form-group
+			label.col-sm-2.control-label(for="fieldName") Name
+			div.col-sm-4
+				input.form-control(type="text" id="fieldName" name="name")
+		div.form-group
+			label.col-sm-2.control-label(for='fieldEmail') Email
+			div.col-sm-4
+				input.form-control(type="email" required id="fieldEmail" name="email")
+		div.form-group
+			label.col-sm-2.control-label(for='fieldPhoto') vacation photo
+			div.col-sm-4
+				input.form-control(type="file" id="fieldPhoto" required accept="image/*" data-url="/upload" name="photo")
+		div.form-group
+			div.col-sm-offset-2.col-sm-4
+				button.btn.btn-primary(type="submit") submit

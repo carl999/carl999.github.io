@@ -1,0 +1,16 @@
+extends layout/layout
+block content
+  .container
+    h2 Our Work
+    h2.title Our Work
+
+        .row
+          each item in movies
+            .col-md-3
+              .thumbnail
+                a(href="/movie/#{item._id}")
+                  img(src="#{item.post}", alt="#{item.name}")
+
+
+
+
